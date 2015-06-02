@@ -89,6 +89,6 @@ app
 
 app.use(serve(__dirname + '/js'));
 
-var path = Number(process.env.PORT || 3000);
+var port = Number(process.env.PORT || 3000);
 
-app.listen(path);
+app.listen(port);
