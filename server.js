@@ -16,7 +16,7 @@ app.use(bodyParser());
 
 
 // Cors Start
-origin = 'http://corstestclient.herokuapp.com/';
+origin = ['http://corstestclient.herokuapp.com/', 'http://localhost:3001/'];
 methods = [
   'POST',
   'GET'
