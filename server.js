@@ -16,7 +16,7 @@ app.use(bodyParser());
 
 
 // Cors Start
-origin = true;
+origin = 'http://corstestclient.herokuapp.com/';
 methods = [
   'POST',
   'GET'
