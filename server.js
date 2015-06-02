@@ -20,8 +20,7 @@ origin = [
   'http://localhost/'
 ];
 methods = [
-  'POST',
-  'GET'
+  'POST'
 ];
 options = {
   origin: origin,
