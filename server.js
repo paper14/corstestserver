@@ -16,9 +16,7 @@ app.use(bodyParser());
 
 
 // Cors Start
-origin = [
-  'http://localhost/'
-];
+origin = true;
 methods = [
   'POST',
   'GET'
@@ -68,6 +66,9 @@ router
       'name': thisData.name
     };
     console.log(this.session.name);
+  })
+  .get('/ajax-test', function * (next) {
+    this.body = "This is your Result";
   });
 
 // Join the 'templates folder'
@@ -92,3 +93,5 @@ app.use(serve(__dirname + '/js'));
 var port = Number(process.env.PORT || 3000);
 
 app.listen(port);
+
+console.log("Listening to PORT " + port);
